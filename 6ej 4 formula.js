@@ -13,10 +13,10 @@ console.log('C es = ' + C)
 
 
 
-var determinante = Math.pow(B, 2) - (4 * A * C)
+var determinante =Math.pow(B, 2) - (4 * A * C)
 if (determinante > 0) {
     var x1 = ((B * (-1)) + Math.sqrt(determinante)) / (2 * A)
     var x2 = ((B * (-1)) - Math.sqrt(determinante)) / (2 * A)
     console.log('X1=' + x1)
     console.log('X2=' + x2)
-} else {}
+} 

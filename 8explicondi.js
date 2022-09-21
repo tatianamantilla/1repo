@@ -57,10 +57,10 @@ var b = Math.round(Math.random() * 10)
 console.log(+a)
 console.log(+b)
 console.log('')
-if ((b<=a)&&(b%a==0)) {
-    console.log(+b,'Es factor de',+a)
-}else{ 
-    console.log(+b,'NO es factor de',+a)
+if ((b <= a) && (b % a == 0)) {
+    console.log(+b, 'Es factor de', +a)
+} else {
+    console.log(+b, 'NO es factor de', +a)
 }
 
 /*Positivo y negativo */
@@ -90,44 +90,58 @@ if (a > b) {
 
 /*tres numeros aleatorios a,b, c, diga cual es el menor. No ultilice operadores logicos*/
 
+var a = Math.round(Math.random() * 20)
+var b = Math.round(Math.random() * 20)
+var c = Math.round(Math.random() * 20)
+
+if ((a > b) == (b > c)) {
+    console.log(+a, +b, +c, 'El numero menor es', +a)
+} else if ((a < b) == (b >c)) {
+    console.log(+a, +b, +c, 'El numero menor es', +b)
+} else
+    console.log(+a, +b, +c, 'El numero menor es', +c)
+
+
+
+
 var a = Math.round(Math.random() * 100)
 var b = Math.round(Math.random() * 100)
 var c = Math.round(Math.random() * 100)
 
-if ((a < b) == (b > c)) {
-    console.log(+a, +b, +c, 'El numero menor es', +b)
-} else if ((a < b) == (b > c)) {
-    console.log(+a, +b, +c, 'El numero menor es', +c)
+if ((a > b) == (b < c)) {
+    console.log(+a, +b, +c, 'El numero mayor es', +b)
+} else if ((a > b) == (b < c)) {
+    console.log(+a, +b, +c, 'El numero mayor es', +c)
 } else
-    console.log(+a, +b, +c, 'El numero menor es', +a)
+    console.log(+a, +b, +c, 'El numero mayor es', +a)
 
 
 /*Calificaciones */
-var nota=Math.round(Math.random* 4.9)
+var nota = Math.round(Math.random * 4.9)
 console.log(`Su nota es: ${nota}`)
 
-if (nota>=4.5) {
-    console.log('Excelente')  
-} else if (nota>=4.0) {
-    console.log('Sobresaliente')  
-} else if (nota>=3.5) {
-    console.log('Aceptable') 
-} else if (nota >2.5) {
-    console.log('Regular') 
-} else { 
-    console.log('Insuficiente') 
+if (nota >= 4.5) {
+    console.log('Excelente')
+} else if (nota >= 4.0) {
+    console.log('Sobresaliente')
+} else if (nota >= 3.5) {
+    console.log('Aceptable')
+} else if (nota > 2.5) {
+    console.log('Regular')
+} else {
+    console.log('Insuficiente')
 }
 
 
 
 //OPERADORES LOGICOS && || !
 
-var x=true
-var y=false
-console.log (`Expresion OR disyuncion, O ${x || y}`)
+var x = true
+var y = false
+console.log(`Expresion OR disyuncion, O ${x || y}`)
 var caf = 3.1
-var edad=15
+var edad = 15
 console.log(`Vota si es mayor que 18 ${!(edad<18)}`)
-console.log (`Expresion OR disyuncion, O ${edad<=12|| edad>=80}`)
-console.log (`Expresion AND conjcion, y ${caf>3.0 && caf<4.0}`)
+console.log(`Expresion OR disyuncion, O ${edad<=12|| edad>=80}`)
+console.log(`Expresion AND conjcion, y ${caf>3.0 && caf<4.0}`)
 console.log(``)
